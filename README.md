@@ -150,11 +150,3 @@ The production build can be checked with `npm.cmd --prefix frontend run build`.
 
 The frontend test verifies the fresh-session login screen. Push updates use the
 authenticated `/ws/updates` WebSocket channel, with polling retained as a fallback.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
