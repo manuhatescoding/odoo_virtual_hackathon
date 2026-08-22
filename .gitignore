@@ -1,15 +1,2 @@
-__pycache__/
-*.py[cod]
-.venv/
-.env
-frontend/.env
-frontend/node_modules/
-frontend/dist/
-dayflow.db
-*.db
-*.sqlite
-*.sqlite3
-backend/.env
-frontend/.env.local
-npm-debug.log*
-coverage/
+# Created by pytest automatically.
+*
