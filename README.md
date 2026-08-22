@@ -1,2 +1,1 @@
-﻿# odoo_virtual_hackathon
-# event
+
