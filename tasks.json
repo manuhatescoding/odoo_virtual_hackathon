@@ -1,0 +1,194 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Install frontend tests",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend install",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Test frontend",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Retest 1 frontend build",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Retest 2 frontend tests",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend build",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend tests",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final build check",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend tests",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend build",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend tests",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend build",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend test",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend build",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend run build",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Final frontend tests",
+			"type": "shell",
+			"command": "npm.cmd --prefix frontend test",
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}
