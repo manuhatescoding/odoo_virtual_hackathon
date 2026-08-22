@@ -1,0 +1,47 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgresql://dayflow:dayflow@postgres:5432/dayflow
+      CORS_ORIGINS: http://localhost:5173,http://localhost
+      JWT_SECRET: change-this-before-production
+    volumes:
+      - dayflow_data:/data
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    depends_on:
+      backend:
+        condition: service_started
+    ports:
+      - "5173:80"
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: dayflow
+      POSTGRES_USER: dayflow
+      POSTGRES_PASSWORD: dayflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dayflow -d dayflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+volumes:
+  dayflow_data:
+  postgres_data:
