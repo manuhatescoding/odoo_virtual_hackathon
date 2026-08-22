@@ -1,12 +1,9 @@
-FROM node:20-alpine AS build
-WORKDIR /app
-COPY frontend/package*.json ./
-RUN npm ci
-COPY frontend ./
-RUN npm run build
+FROM python:3.12-slim
 
-FROM nginx:1.27-alpine
-COPY frontend/nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+WORKDIR /app
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
+COPY backend ./backend
+
+EXPOSE 8000
+CMD ["python", "-m", "uvicorn", "app.main:app", "--app-dir", "backend", "--host", "0.0.0.0", "--port", "8000"]
