@@ -1,0 +1,1 @@
+export default function Sidebar({ items = [], active, onSelect }) { return <aside className="sidebar"><div className="sidebar-brand"><span className="brand-mark small">D</span><span>dayflow</span></div><nav>{items.map((item) => <button className={active === item ? 'nav-item active' : 'nav-item'} onClick={() => onSelect?.(item)} key={item}>{item}</button>)}</nav></aside>; }

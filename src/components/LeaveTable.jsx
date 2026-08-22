@@ -1,0 +1,1 @@
+export default function LeaveTable({ requests = [] }) { return <div className="table-scroll"><table><thead><tr><th>Employee</th><th>Type</th><th>Status</th></tr></thead><tbody>{requests.map((request) => <tr key={request.id}><td>#{request.employee_id}</td><td>{request.leave_type}</td><td>{request.status}</td></tr>)}</tbody></table></div>; }

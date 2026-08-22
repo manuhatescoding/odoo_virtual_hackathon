@@ -1,0 +1,1 @@
+export default function DashboardCard({ label, value, change, accent = 'blue' }) { return <div className="metric"><div className={`metric-icon ${accent}`} /><span>{label}</span><strong>{value}</strong><small>{change}</small></div>; }

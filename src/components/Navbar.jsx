@@ -1,0 +1,1 @@
+export default function Navbar({ user }) { return <header className="topbar"><div className="breadcrumb">Workspace <span>/</span> Overview</div><div className="user-chip">{user?.full_name || 'Guest'}</div></header>; }

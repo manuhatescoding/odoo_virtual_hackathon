@@ -1,0 +1,1 @@
+export default function AttendanceTable({ records = [] }) { return <div className="table-scroll"><table><thead><tr><th>Employee</th><th>Date</th><th>Status</th></tr></thead><tbody>{records.map((record) => <tr key={record.id}><td>#{record.employee_id}</td><td>{record.date}</td><td>{record.status}</td></tr>)}</tbody></table></div>; }
